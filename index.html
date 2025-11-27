@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhrubo Sarker Avroo - Student & Coder</title>
+<meta name="description" content="Dhrubo Sarker Avroo, 8th grade student from Cantonment Public School and College Lalmonirhat. Olympiad & Competition participant, aspiring advanced programmer.">
+<meta name="keywords" content="Dhrubo Sarker Avroo, Olympiad, Competitions, Programming, Python, HTML, CSS, Student, Coding">
+<meta name="author" content="Dhrubo Sarker Avroo">
+<link rel="icon" href="https://placehold.co/32x32/10b981/ffffff?text=DSA" type="image/png">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body { font-family: 'Inter', sans-serif; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth; }
+.btn-primary { transition: all 0.3s ease; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 15px rgba(16, 185, 129, 0.4); }
+.achievement-card { transition: transform 0.5s ease, opacity 0.6s ease; opacity: 0; transform: translateY(20px); }
+.achievement-card.show { opacity: 1; transform: translateY(0); }
+
+[data-theme="dark"] body { background-color: #111827; color: #f3f4f6; }
+[data-theme="dark"] header, [data-theme="dark"] nav, [data-theme="dark"] .achievement-card { background-color: #1f2937; border-color: #374151; }
+[data-theme="dark"] .text-gray-600 { color: #d1d5db; }
+[data-theme="dark"] .text-gray-700 { color: #e5e7eb; }
+[data-theme="dark"] .text-gray-900 { color: #f3f4f6; }
+[data-theme="dark"] .bg-gray-50 { background-color: #1f2937; }
+[data-theme="dark"] .bg-white { background-color: #1f2937; }
+[data-theme="dark"] .border-gray-100 { border-color: #374151; }
+[data-theme="dark"] .border-gray-200 { border-color: #4b5563; }
+[data-theme="dark"] .hover\:bg-gray-100:hover { background-color: #374151; }
+[data-theme="dark"] .hover\:bg-teal-50:hover { background-color: #064e3b; }
+header nav a { transition: all 0.3s ease; }
+header nav a:hover { transform: translateY(-2px); color: #14b8a6; }
+</style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="text-xl font-extrabold text-gray-900">Dhrubo <span class="text-teal-500">Avroo</span></div>
+    <div class="flex items-center gap-4">
+        <button id="theme-toggle-desktop" class="hidden sm:inline-flex p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">🌓</button>
+        <button id="theme-toggle-mobile" class="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">🌓</button>
+        <button id="menu-toggle" class="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <nav class="hidden sm:flex space-x-6 font-medium text-gray-600">
+        <a href="#journey" class="hover:text-teal-600 transition duration-150">Coding & Projects</a>
+        <a href="#achievements" class="hover:text-teal-600 transition duration-150">Achievements</a>
+        <a href="#bio" class="hover:text-teal-600 transition duration-150">About Me</a>
+        <a href="#contact" class="hover:text-teal-600 transition duration-150">Contact</a>
+    </nav>
+</div>
+<nav id="mobile-menu" class="sm:hidden hidden bg-white border-t border-gray-200">
+    <a href="#journey" class="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition duration-150">Coding & Projects</a>
+    <a href="#achievements" class="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition duration-150">Achievements</a>
+    <a href="#bio" class="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition duration-150">About Me</a>
+    <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition duration-150">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="pt-16 pb-20 md:pt-24 md:pb-28 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<img src="https://placehold.co/150x150/10b981/ffffff?text=DSA" alt="Profile" class="rounded-full object-cover w-36 h-36 mx-auto mb-6 border-4 border-teal-500 shadow-xl">
+<h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-4">I'm Dhrubo Sarker Avroo</h1>
+<h2 class="text-2xl md:text-3xl font-semibold text-teal-600 mb-6">8th Grade Student | Olympiad & Competition Participant | Aspiring Advanced Programmer</h2>
+<p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">I am a student at Cantonment Public School and College Lalmonirhat, actively participating in Olympiads and competitions while improving coding skills.</p>
+<div class="space-y-4 sm:space-y-0 sm:space-x-4">
+<a href="#achievements" class="btn-primary inline-block bg-teal-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-teal-600 focus:outline-none focus:ring-4 focus:ring-teal-300">Explore Achievements</a>
+<a href="#journey" class="inline-block border-2 border-gray-300 text-gray-700 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 focus:outline-none focus:ring-4 focus:ring-gray-200">See Projects</a>
+</div>
+</div>
+</section>
+
+<section id="journey" class="py-16 md:py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">My Projects & Coding Journey</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+<div class="achievement-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-500 text-left">
+<div class="text-3xl font-extrabold text-teal-600 mb-3">Python</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Building Small Games</h3>
+<p class="text-gray-600">Developed multiple small games using Python, mastering logic, functions, and loops.</p>
+<span class="mt-4 inline-block bg-teal-100 text-teal-700 text-sm font-semibold px-3 py-1 rounded-full">Completed Projects</span>
+</div>
+<div class="achievement-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500 text-left">
+<div class="text-3xl font-extrabold text-indigo-600 mb-3">HTML/CSS</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Web Development Focus</h3>
+<p class="text-gray-600">Creating websites with modern layouts and design principles.</p>
+<span class="mt-4 inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-3 py-1 rounded-full">Ongoing Learning</span>
+</div>
+<div class="achievement-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-400 text-left">
+<div class="text-3xl font-extrabold text-gray-600 mb-3">Block Coding</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Visual Logic & Problem Solving</h3>
+<p class="text-gray-600">Early experience with block coding enhanced problem-solving skills for text-based programming.</p>
+<span class="mt-4 inline-block bg-gray-200 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Early Experience</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="achievements" class="py-16 md:py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Olympiad & Competition Achievements</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+
+<div class="achievement-card bg-teal-50 p-6 rounded-xl shadow-md border border-teal-200 flex items-start">
+<span class="text-3xl mr-4 text-teal-600">🏆</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">Champion of ISOC</h3>
+<p class="text-gray-700 text-sm">Champion of the International Science Olympiad Contest (ISOC).</p>
+</div>
+</div>
+
+<div class="achievement-card bg-teal-50 p-6 rounded-xl shadow-md border border-teal-200 flex items-start">
+<span class="text-3xl mr-4 text-teal-600">🌍</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">Divisional Topper - Earth Olympiad</h3>
+<p class="text-gray-700 text-sm">Achieved top position in the divisional round of International Earth Olympiad.</p>
+</div>
+</div>
+
+<div class="achievement-card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-start">
+<span class="text-3xl mr-4 text-indigo-600">🧪</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">BdJSO Camp Selection (2024)</h3>
+<p class="text-gray-700 text-sm">Selected for Bangladesh Junior Science Olympiad camp selection round.</p>
+</div>
+</div>
+
+<div class="achievement-card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-start">
+<span class="text-3xl mr-4 text-indigo-600">🤖</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">National Qualifier - AI & Creative</h3>
+<p class="text-gray-700 text-sm">Qualified for national round in Artificial Intelligence and Creative Olympiads.</p>
+</div>
+</div>
+
+<div class="achievement-card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-start">
+<span class="text-3xl mr-4 text-indigo-600">🏅</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">Quiz Fest Finalist - Team Leader</h3>
+<p class="text-gray-700 text-sm">Led team "Perfect" to final round in International Quiz Fest.</p>
+</div>
+</div>
+
+<div class="achievement-card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-start">
+<span class="text-3xl mr-4 text-indigo-600">🧮</span>
+<div>
+<h3 class="text-xl font-bold text-gray-900">Consistent Competition Performer</h3>
+<p class="text-gray-700 text-sm">Consistently excelled in Olympiads and competitions throughout the year.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="bio" class="py-16 md:py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-teal-500 inline-block pb-1">About Me</h2>
+<div class="text-lg text-gray-700 mt-6 leading-relaxed bg-white p-6 rounded-xl shadow-lg text-left">
+<p class="font-bold text-gray-900 mb-3">Dhrubo Sarker Avroo | Cantonment Public School and College Lalmonirhat</p>
+<p class="mb-4">I actively participate in Olympiads and competitions, and pursue coding projects to sharpen my programming skills and problem-solving abilities.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-12 bg-gray-900">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-extrabold text-white mb-4">Let's Connect!</h2>
+<p class="text-lg text-teal-300 mb-8 max-w-xl mx-auto">Contact for collaborations, coding discussions, or competitions.</p>
+<a href="mailto:dhrubosarkera@gmail.com" class="inline-block bg-teal-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-teal-600 transition duration-300">dhrubosarkera@gmail.com</a>
+<p class="mt-4 text-lg text-teal-300">Phone/WhatsApp: +8801717676292</p>
+<p class="mt-8 text-sm text-gray-500">&copy; 2025 Dhrubo Sarker Avroo. All rights reserved.</p>
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuToggle.setAttribute('aria-expanded', !isHidden);
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }));
+
+    const toggleTheme = () => {
+        const html = document.documentElement;
+        html.dataset.theme = html.dataset.theme === 'light' ? 'dark' : 'light';
+    };
+    document.getElementById('theme-toggle-desktop').addEventListener('click', toggleTheme);
+    document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
+
+    const cards = document.querySelectorAll('.achievement-card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+</body>
+</html>
